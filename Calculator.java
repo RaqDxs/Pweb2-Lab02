@@ -11,6 +11,7 @@ public class Calculator{
         sumar(x,y);
         sub(x, y);
         mul(x, y);
+        div(x, y);
         mod(x, y);
 
     }
@@ -21,11 +22,15 @@ public class Calculator{
     }
   
     //Paul
-    int sub(int a, int b){
+    public static int sub(int a, int b){
       System.out.println("La resta de ambos numeros es: " + (a-b)); 
-      return 0; }
-      
-    int mul(int a, int b){ return 0; }
+      return 0; 
+    }
+
+    public static int mul(int a, int b){
+      System.out.println("El resultado de la multiplicación es: " + (a*b)); 
+      return 0; 
+    }
     
     public static int div (int a, int b){
       double d = (double)(a/b);
@@ -37,4 +42,4 @@ public class Calculator{
       return 0;
     }
   }
-}
+
